@@ -1,0 +1,48 @@
+@import 'variables.less';
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: @font-family;
+    background-image: url("../images/plane.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.container {
+    // background-image: url("../images/airport.jpg");
+    // background-size: cover;
+    // height: 100vh;
+    .trans-box {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.7;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .header {
+            display: flex;
+            justify-content: center;
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        .calculator {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
+

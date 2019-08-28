@@ -9,3 +9,4 @@ function milesOrMoney(miles, money, value) {
 }
 
 
+// console.log(milesOrMoney())

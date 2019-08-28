@@ -3,23 +3,35 @@
 }
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-image: url("../images/plane.jpg");
   background-size: cover;
   height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
 }
 .container .trans-box {
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid black;
+  border-radius: 5px;
   opacity: 0.7;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
   height: auto;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 450px) {
+  .container .trans-box {
+    width: 95%;
+    margin: 3%;
+  }
 }
 .container .trans-box .header {
   display: flex;
@@ -27,15 +39,27 @@ html {
 }
 .container .trans-box .header h1 {
   font-size: 4rem;
+  padding: 5% 0;
 }
 .container .trans-box .calculator {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  padding: 2%;
 }
 .container .trans-box form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.container .trans-box form input {
+  padding: 3%;
+}
+.container .trans-box form .btn {
+  padding: 1% 12%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 5%;
+  font-size: 2rem;
 }
